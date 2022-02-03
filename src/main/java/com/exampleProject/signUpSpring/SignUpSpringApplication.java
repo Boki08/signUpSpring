@@ -1,0 +1,13 @@
+package com.exampleProject.signUpSpring;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SignUpSpringApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SignUpSpringApplication.class, args);
+	}
+
+}
