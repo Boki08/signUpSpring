@@ -27,10 +27,10 @@ public class AppUser implements UserDetails {
     private String email;
     @Enumerated(EnumType.STRING)
     private AppUserRole appUserRole;
-    private Boolean locked;
-    private Boolean enabled;
+    private Boolean locked = false;
+    private Boolean enabled = false;
 
-    public AppUser(String firstName, String lastName, String password, String email, AppUserRole appUserRole, Boolean locked, Boolean enabled) {
+    public AppUser(String firstName, String lastName, String password, String email, AppUserRole appUserRole) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = password;
